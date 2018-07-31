@@ -1,22 +1,21 @@
 {
 	"name": "@cvpcasada/slugify",
 	"version": "0.3.1",
-	"description": "Slugify a string",
+	"description": "sindresorhus' slugify packaged for the browser",
 	"license": "MIT",
-	"repository": "sindresorhus/slugify",
+	"repository": "cvpcasada/slugify",
 	"main": "dist/slugify-common.js",
 	"module": "dist/slugify-es.js",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "Cyrus Venn Casada",
+		"email": "cvpcasada@outlook.com",
+		"url": "https://cyrus-builds.tech"
 	},
 	"engines": {
 		"node": ">=6"
 	},
 	"scripts": {
-		"build": "rollup -c",
-		"test": "xo && ava"
+		"build": "rollup -c"
 	},
 	"files": [
 		"dist"
@@ -40,21 +39,19 @@
 		"filename",
 		"id"
 	],
-	"dependencies": {
-		"babel-runtime": "^6.26.0",
-		"lodash": "^4.17.10"
-	},
 	"devDependencies": {
-		"ava": "*",
+		"@sindresorhus/slugify": "sindresorhus/slugify",
 		"babel-core": "^6.26.3",
-		"babel-preset-env": "^1.7.0",
 		"babel-plugin-lodash": "^3.3.4",
 		"babel-plugin-transform-runtime": "^6.23.0",
-		"escape-string-regexp": "^1.0.5",
+		"babel-preset-env": "^1.7.0",
 		"rollup": "^0.63.4",
 		"rollup-plugin-babel": "^3.0.7",
 		"rollup-plugin-commonjs": "^9.1.4",
-		"rollup-plugin-node-resolve": "^3.3.0",
-		"xo": "*"
+		"rollup-plugin-node-resolve": "^3.3.0"
+	},
+	"dependencies": {
+		"babel-runtime": "^6.26.0",
+		"lodash.deburr": "^4.1.0"
 	}
 }
