@@ -1,6 +1,6 @@
 'use strict';
-const deburr = require('lodash.deburr');
-const escapeStringRegexp = require('escape-string-regexp');
+import { deburr } from 'lodash';
+import escapeStringRegexp from 'escape-string-regexp';
 
 const decamelize = string => {
 	return string
@@ -16,7 +16,10 @@ const builtinReplacements = new Map([
 
 const doCustomReplacements = (string, replacements) => {
 	for (const [key, value] of replacements) {
-		string = string.replace(new RegExp(escapeStringRegexp(key), 'g'), ` ${value} `);
+		string = string.replace(
+			new RegExp(escapeStringRegexp(key), 'g'),
+			` ${value} `
+		);
 	}
 
 	return string;
@@ -33,10 +36,13 @@ module.exports = (string, options) => {
 		throw new TypeError(`Expected a string, got \`${typeof string}\``);
 	}
 
-	options = Object.assign({
-		separator: '-',
-		customReplacements: []
-	}, options);
+	options = Object.assign(
+		{
+			separator: '-',
+			customReplacements: []
+		},
+		options
+	);
 
 	const separator = escapeStringRegexp(options.separator);
 	const customReplacements = new Map([

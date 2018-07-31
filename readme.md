@@ -1,3 +1,5 @@
+## This is a fork. you might want the original one from [Sindresorhus](https://github.com/sindresorhus/slugify). check that out. This only transpiles it to be compatible to older browsers.
+
 # slugify [![Build Status](https://travis-ci.org/sindresorhus/slugify.svg?branch=master)](https://travis-ci.org/sindresorhus/slugify)
 
 > Slugify a string
