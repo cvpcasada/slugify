@@ -1,10 +1,11 @@
 {
 	"name": "@cvpcasada/slugify",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Slugify a string",
 	"license": "MIT",
 	"repository": "sindresorhus/slugify",
-	"main": "dist/index.js",
+	"main": "dist/slugify-common.js",
+	"module": "dist/slugify-es.js",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",

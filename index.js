@@ -31,7 +31,7 @@ const removeMootSeparators = (string, separator) => {
 		.replace(new RegExp(`^${separator}|${separator}$`, 'g'), '');
 };
 
-module.exports = (string, options) => {
+export default (string, options) => {
 	if (typeof string !== 'string') {
 		throw new TypeError(`Expected a string, got \`${typeof string}\``);
 	}

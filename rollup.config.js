@@ -19,10 +19,13 @@ const makeExternalPredicate = externalArr => {
 
 export default {
 	input: "index.js",
-	output: {
-		file: pkg.main,
-		format: "cjs"
-	},
+	output: [
+		{
+			file: pkg.main,
+			format: "cjs"
+		},
+		{ file: pkg.module, format: "es" }
+	],
 	external: makeExternalPredicate(external),
 	plugins: [
 		resolve({ preferBuiltins: false }),
