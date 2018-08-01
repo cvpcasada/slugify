@@ -1,6 +1,6 @@
 {
 	"name": "@cvpcasada/slugify",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "sindresorhus' slugify packaged for the browser",
 	"license": "MIT",
 	"repository": "cvpcasada/slugify",
