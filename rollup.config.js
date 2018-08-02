@@ -41,8 +41,7 @@ export default {
 						targets: {
 							browsers: [">0.25%", "not ie 11", "not op_mini all"]
 						},
-						loose: true,
-						modules: false
+						modules: false,
 					}
 				]
 			],
